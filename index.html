@@ -17,51 +17,148 @@
       href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | Notifications page</title>
   </head>
   <body>
-    <main class="container.is-fullhd">
-      <div class="columns">
-        <div class="column">
-        <strong>Notifications</strong>
-        <button>3</button></div>
-        <div class="column">Mark all as read</div>
+    <main class="container">
+      <header class="container">
+        <div class="row align-items-center">
+          <div class="col header">
+            <strong>Notifications</strong>
+            <button class="btn btn-dark" type="button" disabled>3</button>
+          </div>
+          <div class="col mark justify-content-end">
+            Mark all as read
+          </div>
+        </div>
+      </header>
+
+      <div class="container card">
+        <div class="row align-items-center">
+          <div class="col-2 img">
+            <img
+              src="./assets/images/avatar-mark-webber.webp"
+              alt="Mark Webber"
+            />
+          </div>
+          <div class="col">
+            <strong>Mark Webber</strong> reacted to your recent post My first
+            tournament today!
+            <div>1m ago</div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-          <img src="./assets/images/avatar-mark-webber.webp" alt="Mark Webber"/>
-        <strong>Mark Webber</strong> reacted to your recent post My first tournament today! 1m
-        ago
+
+      <div class="container card">
+        <div class="row align-items-center">
+          <div class="col-2 img">
+            <img
+              src="./assets/images/avatar-angela-gray.webp"
+              alt="Angela Gray"
+            />
+          </div>
+          <div class="col">
+            <strong>Angela Gray</strong> followed you
+            <div>5m ago</div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray"/>
-        <strong>Angela Gray</strong> followed you 5m ago</div>
-      <div class="card">
-        <img src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson"/>
-        <strong>Jacob Thompson</strong> has joined your group Chess Club 1 day ago
+
+      <div class="container card">
+        <div class="row align-items-center">
+          <div class="col-2 img">
+            <img
+              src="./assets/images/avatar-jacob-thompson.webp"
+              alt="Jacob Thompson"
+            />
+          </div>
+          <div class="col">
+            <strong>Jacob Thompson</strong> has joined your group Chess Club
+            <div>1 day ago</div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin"/>
-        <strong>Rizky Hasanuddin</strong> sent you a private message 5 days ago Hello, thanks for
-        setting up the Chess Club. I've been a member for a few weeks now and
-        I'm already having lots of fun and improving my game.
+
+      <div class="container card">
+        <div class="row align-items-center">
+          <div class="col-2 img">
+            <img
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="Rizky Hasanuddin"
+            />
+          </div>
+          <div class="col">
+            <strong>Rizky Hasanuddin</strong> sent you a private message
+            <div>5 days ago</div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="./assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith"/>
-        <strong>Kimberly Smith</strong> commented on your picture 1 week ago
-        <img src="./assets/images/image-chess.webp" alt="chess game"/>
+
+            <div class="container justify-content-end card2">
+              <div class="row-8 align-items-center">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+              </div>
+            </div>
+
+      <div class="container card">
+        <div class="row align-items-center">
+          <div class="col-2 img">
+            <img
+              src="./assets/images/avatar-kimberly-smith.webp"
+              alt="Kimberly Smith"
+            />
+          </div>
+          <div class="col">
+            <strong>Kimberly Smith</strong> commented on your picture
+            <div>1 week ago</div>
+          </div>
+          <img
+            src="./assets/images/image-chess.webp"
+            alt="chess game"
+            class="col-2 img-end"
+          />
+        </div>
       </div>
-      <div class="card">
-        <img src="./assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson"/>
-        <strong>Nathan Peterson</strong> reacted to your recent post 5 end-game strategies to
-        increase your win rate 2 weeks ago
+
+      <div class="container card">
+        <div class="row align-items-center">
+          <div class="col-2 img">
+            <img
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt="Nathan Peterson"
+            />
+          </div>
+          <div class="col">
+            <strong>Nathan Peterson</strong> reacted to your recent post 5
+            end-game strategies to increase your win rate
+            <div>2 weeks ago</div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim"/>
-        <strong>Anna Kim</strong> left the group Chess Club 2 weeks ago</div>
+
+      <div class="container card">
+        <div class="row align-items-center">
+          <div class="col-2 img">
+            <img src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim" />
+          </div>
+          <div class="col">
+            <strong>Anna Kim</strong> left the group Chess Club
+            <div>2 weeks ago</div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer class="footer">
+
+    <footer>
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
@@ -69,5 +166,10 @@
       Coded with ❤️ by
       <a href="https://github.com/sarahwylie" target="_blank">Sarah Wylie</a>.
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

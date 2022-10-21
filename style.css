@@ -1,46 +1,88 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  :root {
-    --red: hsl(1, 90%, 64%);
-    --blue: hsl(219, 85%, 26%);
-    --white: hsl(0, 0%, 100%);
-    --vlight-grayblue: hsl(210, 60%, 98%);
-    --lgrayish-blue1: hsl(211, 68%, 94%);
-    --lgrayish-blue2: hsl(205, 33%, 90%);
-    --grayish-blue: hsl(219, 14%, 63%);
-    --dgrayish-blue: hsl(219, 12%, 42%);
-    --vdark-blue: hsl(224, 21%, 14%);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: var(--vlight-grayblue); */
+}
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --vlight-grayblue: hsl(210, 60%, 98%);
+  --lgrayish-blue1: hsl(211, 68%, 94%);
+  --lgrayish-blue2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dgrayish-blue: hsl(219, 12%, 42%);
+  --vdark-blue: hsl(224, 21%, 14%);
+}
 
-  p {
-    font-size: 16px;
-  }
+.container {
+  margin-bottom: 2%;
+  /* background-color: var(--white); */
+}
 
-  footer {
-    color: #023047;
-    font-size: 11px;
-    position: fixed;
-    left: 0;
-    bottom: 0rem;
-    width: 100%;
-    text-align: center;
-  }
-  footer a {
-    color: hsl(228, 45%, 44%);
-  }
-  footer:hover {
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    bottom: 0;
-  }
-  
-  footer:not(:hover) {
-    -webkit-transition: all .5s;
-    transition: all .5s;
-  }
+header {
+  padding: 1rem;
+}
+.header {
+  font-weight: 800;
+  font-size: 2.5em;
+}
+button {
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+  margin: 2%;
+}
+.mark {
+  text-align: end;
+  background-color: var(--white);
+  font-size: 1.5em;
+}
+.mark:hover {
+  cursor: pointer;
+}
+.card {
+  border: none;
+  font-size: 1.5em;
+}
+.card2 {
+    font-size: 1.5em;
+    
+}
+.img {
+  height: 10%;
+  width: 10%;
+  margin: 1rem;
+}
+.img-end {
+  height: 15%;
+  width: 15%;
+  float: end;
+}
+footer {
+  color: #023047;
+  font-size: 11px;
+  position: fixed;
+  left: 0;
+  bottom: 0rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1em;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+footer:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  bottom: 0;
+}
+
+footer:not(:hover) {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
